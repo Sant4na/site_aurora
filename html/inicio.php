@@ -1,3 +1,11 @@
+
+<?php
+include('../php/db.php');
+include('../php/protect.php');
+include('../php/listagem_clientes.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,16 +17,13 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="../img/logo.jpg" alt="Info Camp Logo">
-            <div class="#subtitulo">
-
-            </div>
-        </div>
-
-        <a href="#" class="titulo_empresa">Aurora Store</a>
-        <a href="#" class="titulo_empresa">Sair</a>
+<div class="cabecalho">
+        <img src="../img/logo.jpg" alt="" />
+        <h3>BI Solucions</h3>
+        <div class="spacer"></div>
+        <h3 class="nome-empresa"><?php echo $_SESSION['nome'] ?></h3>
+        <a href="../php/logout.php">Sair</a>
+        <h5></h5>
     </div>
 
 

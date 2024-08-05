@@ -24,12 +24,16 @@ include('../php/protect.php');
         <h5></h5>
     </div>
 
-    <h1>Formulário de Cadastro de Clientes</h1>
+<a href="">teste1</a>
+<a href="">teste2</a>
+
+    <h1>Cadastro de Clientes</h1>
 
     <form id="formulario" class="form">
+    <div class="linha">
         <div>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" class="nome-input" name="nome" minlength="4" required><br>
+            <input type="text" id="nome" class="nome-input" name="nome" minlength="4" required>
         </div>
 
         <div>
@@ -37,31 +41,38 @@ include('../php/protect.php');
             <select id="sexo" class="sexo-input" name="sexo" required>
                 <option value="M">Masculino</option>
                 <option value="F">Feminino</option>
-
-            </select><br>
+            </select>
         </div>
+    </div>
 
+    <div class="linha unica">
         <div>
             <label for="data-nascimento">Data de Nascimento:</label>
             <input type="date" id="data-nascimento" class="data-nascimento-input" name="data-nascimento" oninput="validarData()" required>
-            <p class="result" id="resultado-data"></p><br>
+            <p class="result" id="resultado-data"></p>
         </div>
+    </div>
 
+    <div class="linha">
         <div>
             <label for="cpf">CPF:</label>
             <input type="text" id="cpf" class="cpf-input" name="cpf" maxlength="11" oninput="validarCPF()" required>
-            <p class="result" id="resultado"></p><br>
+            <p class="result" id="resultado"></p>
         </div>
 
         <div>
             <label for="telefone">Telefone:</label>
             <input type="text" id="telefone" class="telefone-input" name="telefone" maxlength="11" oninput="validarTelefone()" required>
-            <p class="result" id="resultadofone"></p><br>
+            <p class="result" id="resultadofone"></p>
         </div>
+    </div>
 
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
+    <div>
+        <button type="submit">Enviar</button>
+    </div>
+</form>
+
+
 
 
     </form>
