@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.header img {
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    width: 500px;
+    height: 200px;
+    padding: 50px;
+    position: relative; /* Adicionado */
+
+    
+    
+}
+
+.card img {
+    
+    width: 130px;
+    height: 130x;
+    float: left; /* Alinha a imagem à esquerda */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+    
+
+.card a {
+    position: absolute;
+    bottom: 20px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    
+}
+
+.card a img[src$="btn_avancar.png"] {
+    width: 50px;
+}
+
+/*
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    position: absolute; 
+    top: 100px; 
+    right: 50px; 
+    margin: 10px; 
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+    
+    
+    
+}*/
+.titulo_empresa{
+text-align: center;
+color: #00f050;
+float: right;
+
+
+}
+.subtitulo_div{
+
+    text-align: justify;
+    color: #033163;
+    font-size: 18px;
+    position: relative;
+    right: 90px;
+    padding: 80px;
+   
+}
+
+
+#subtitulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.titulo_div{
+
+   position: relative;
+   text-align: left;
+   left: 40px;
+   padding-top: 40px;
+}
+
